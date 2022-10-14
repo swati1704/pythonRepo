@@ -9,7 +9,7 @@ tagname = "Name"
 tagvalue = "notJenkins"
 
 instances=ec2.instances.filter(Filters=[
-    {'Name': 'tag': [tagname], 'Values': [tagvalue]}
+    {'Name': 'Name', 'Values': ['notJenkins']}
 ])
 
 for instance in instances:
