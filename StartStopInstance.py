@@ -14,7 +14,7 @@ instances=ec2.instances.filter(Filters=[
 
 for instance in instances:
     try:
-        instance.stop()
+        instance.start()
         print(f'{instance} stopped')
     except:
         print(f'Error stopping {instance}')
